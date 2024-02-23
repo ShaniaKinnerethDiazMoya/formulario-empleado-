@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Sueldo</title>
+    <link rel="stylesheet" href="CSS/estilos3.css">
+
+</head>
+<body>
+    <section class="content-form">
+        <h3>Bienvenido </h3>
+        <form id="frmEmpleado">
+            <input id="txtNombre" class="cajas-texto" type="text" placeholder="Nombre">
+            <input id="txtHorasTrabajadas" class="cajas-texto" type="number" placeholder="Horas Trabajadas">
+            <input id="txtSueldoHora" class="cajas-texto" type="number" placeholder="Sueldo por hora">
+            <!--<input type="button" placeholder="Calcular hospedaje">Ya no utilozar con input sino con etiqueta button-->
+            <select id="cmbTipoTra" size="1">
+                <option value="No">--Seleccione tipo de empleado--</option>
+                <option value="tipoUno">Tipo 1</option>
+                <option value="tipoDos">Tipo 2</option>
+                <option value="tipoTres">Tipo 3</option>
+                <option value="tipoCuatro">Tipo 4</option>
+            </select>
+            <button id="botones" types="submit">Calcular sueldo</button>
+            <button id="botones" types="reset">Cancelar</button>
+        </form>
+        <h4 id="resultado"></h4>
+    </section>
+    <script src="js/empleado.js"></script>
+</body>
+</html>
